@@ -19,6 +19,16 @@
 
 # Atualização do Perfil
 
+**RF**
+
+- O usuário deve poder atualizar seu nome, email e senha;
+
+**RN**
+
+- O usuário não pode alterar seu email para um email já utilizado;
+- Para atualizar sua senha, o usuário deve informar a senha antiga;
+- Para Atualizar sua senha, o usuário precisa confirmar a nova senha;
+
 # Painel do Prestador de serviço
 
 # Agendamento de serviços
