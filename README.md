@@ -32,3 +32,22 @@
 # Painel do Prestador de serviço
 
 # Agendamento de serviços
+
+**RF**
+
+- O usuário deve poder listar todos prestadores de serviço cadastrado;
+- O usuário deve poder listar os dias de um mês com pelomenos um horário disponivel  de um
+prestador;
+- O usuário deve poder listar horários disponíveis em um dia especifico de um prestador;
+
+**RNF**
+
+- A listagem de prestadores deve ser armazenada em cache;
+
+**RN**
+
+- Cada agendamento deve durar 1h exatamente;
+- Os agendamentos devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último ás 17h);
+- O usuário não pode agendar em um horário já ocupado;
+- O usuário não pode agendar em um horário que já passou;
+- O usuárionão pode agendar serviços consigo mesmo;
