@@ -35,7 +35,7 @@
 
 **RF**
 
-- O usuário deve poder listar todos prestadores de serviço cadastrado;
+- O usuário deve poder listar todos prestadores de serviço cadastrado;✔︎
 - O usuário deve poder listar os dias de um mês com pelomenos um horário disponivel  de um
 prestador;
 - O usuário deve poder listar horários disponíveis em um dia especifico de um prestador;
