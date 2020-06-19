@@ -9,7 +9,7 @@ class DiskStorageProvider implements IStorageProvider {
 
   constructor() {
     this.client = new aws.S3({
-      region: 'sa-east-1',
+      region: 'sa-east-1',
     });
   }
 
@@ -33,15 +33,12 @@ class DiskStorageProvider implements IStorageProvider {
   }
 
   public async deleteFile(file: string): Promise<void> {
-    const filePath = path.resolve(uploadConfig.uploadsFolder, file);
-
-    try {
-      await fs.promises.stat(filePath);
-    } catch {
-      return;
-    }
-
-    await fs.promises.unlink(filePath);
+    await this.client
+      .deleteObject({
+        Bucket: 'marcos-app-gobarber',
+        Key: file,
+      })
+      .promise();
   }
 }
 

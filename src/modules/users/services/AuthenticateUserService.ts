@@ -51,10 +51,9 @@ class AuthenticateUserService {
       expiresIn,
     });
 
-    return {
-      user,
-      token,
-    };
+    const session: IResponse = { user, token };
+
+    return session;
   }
 }
 
