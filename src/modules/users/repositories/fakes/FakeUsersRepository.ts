@@ -21,7 +21,7 @@ class FakeUsersRepository implements IUsersRepository {
     return findUser;
   }
 
-  public async findAllPRoviders({
+  public async findAllProviders({
     except_user_id,
   }: IFindAllProvidersDTO): Promise<User[]> {
     let { users } = this;
