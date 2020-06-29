@@ -16,7 +16,7 @@ export default class ProfileController {
     return response.json(classToClass(user));
   }
 
-  public async upate(request: Request, response: Response): Promise<Response> {
+  public async update(request: Request, response: Response): Promise<Response> {
     const user_id = request.user.id;
     const { name, email, old_password, password } = request.body;
 
@@ -29,8 +29,6 @@ export default class ProfileController {
       old_password,
       password,
     });
-
-    delete user.password;
 
     return response.json(classToClass(user));
   }
